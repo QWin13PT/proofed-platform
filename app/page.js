@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { HugeiconsIcon } from '@hugeicons/react';
-import { WaterfallUp01Icon } from '@hugeicons-pro/core-solid-standard';
+import { WaterfallUp01Icon, UserStoryIcon, Briefcase02Icon } from '@hugeicons-pro/core-solid-standard';
 
 export default function Home() {
   return (
@@ -235,7 +235,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               {/* Creators */}
               <Card className="p-10 bg-white border-2 border-dark/10">
-                <div className="text-5xl mb-6">📺</div>
+                <HugeiconsIcon icon={UserStoryIcon} size={56} className="text-accent mb-6" />
                 <h3 className="text-3xl font-bold mb-3 text-dark">For Creators</h3>
                 <p className="text-dark/60 mb-8 text-lg">Land better deals without exposing your full business</p>
                 <div className="space-y-5 mb-8">
@@ -261,14 +261,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-light p-5 rounded-lg border-l-4 border-accent">
+                <div className="bg-light p-5 rounded-xl border-2 border-dark/10">
                   <p className="text-sm text-dark/80 leading-relaxed"><span className="font-bold">Real example:</span> A creator proves "100K+ subs, $15K+/mo revenue" to land premium brand deals—without sharing dashboard access.</p>
                 </div>
               </Card>
 
               {/* Businesses */}
               <Card className="p-10 bg-white border-2 border-dark/10">
-                <div className="text-5xl mb-6">💼</div>
+                <HugeiconsIcon icon={Briefcase02Icon} size={56} className="text-accent mb-6" />
                 <h3 className="text-3xl font-bold mb-3 text-dark">For Businesses</h3>
                 <p className="text-dark/60 mb-8 text-lg">Win trust in fundraising, sales, and partnerships</p>
                 <div className="space-y-5 mb-8">
@@ -294,7 +294,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-light p-5 rounded-lg border-l-4 border-accent">
+                <div className="bg-light p-5 rounded-xl border-2 border-dark/10">
                   <p className="text-sm text-dark/80 leading-relaxed"><span className="font-bold">Real example:</span> A SaaS startup proves "$3M ARR, 30% MoM growth" during Series A—investors verify instantly, zero data shared.</p>
                 </div>
               </Card>
@@ -385,7 +385,7 @@ export default function Home() {
 Have questions? We've got answers.             </h2>
             <p className="text-xl text-dark/60 text-center mb-16">Everything you need to know about zero-knowledge proofs and Proofed</p>
             <div className="space-y-4">
-              <details className="bg-white p-7 rounded-lg border border-dark/10 hover:border-dark/30 transition-all group">
+              <details className="bg-white p-7 rounded-2xl border border-dark/10 hover:border-dark/30 transition-all group cursor-pointer">
                 <summary className="font-bold text-lg cursor-pointer text-dark list-none flex justify-between items-center">
                   How does zero-knowledge proof work?
                   <span className="text-dark/40 group-open:rotate-180 transition-transform">▼</span>
@@ -395,7 +395,7 @@ Have questions? We've got answers.             </h2>
                 </p>
               </details>
 
-              <details className="bg-white p-7 rounded-lg border border-dark/10 hover:border-dark/30 transition-all group">
+              <details className="bg-white p-7 rounded-2xl border border-dark/10 hover:border-dark/30 transition-all group cursor-pointer">
                 <summary className="font-bold text-lg cursor-pointer text-dark list-none flex justify-between items-center">
                   Do I need a crypto wallet or blockchain knowledge?
                   <span className="text-dark/40 group-open:rotate-180 transition-transform">▼</span>
@@ -405,7 +405,7 @@ Have questions? We've got answers.             </h2>
                 </p>
               </details>
 
-              <details className="bg-white p-7 rounded-lg border border-dark/10 hover:border-dark/30 transition-all group">
+              <details className="bg-white p-7 rounded-2xl border border-dark/10 hover:border-dark/30 transition-all group">
                 <summary className="font-bold text-lg cursor-pointer text-dark list-none flex justify-between items-center">
                   Can anyone verify my proofs?
                   <span className="text-dark/40 group-open:rotate-180 transition-transform">▼</span>
@@ -415,7 +415,7 @@ Have questions? We've got answers.             </h2>
                 </p>
               </details>
 
-              <details className="bg-white p-7 rounded-lg border border-dark/10 hover:border-dark/30 transition-all group">
+              <details className="bg-white p-7 rounded-2xl border border-dark/10 hover:border-dark/30 transition-all group cursor-pointer">
                 <summary className="font-bold text-lg cursor-pointer text-dark list-none flex justify-between items-center">
                   What platforms and metrics can I prove?
                   <span className="text-dark/40 group-open:rotate-180 transition-transform">▼</span>
@@ -425,7 +425,7 @@ Have questions? We've got answers.             </h2>
                 </p>
               </details>
 
-              <details className="bg-white p-7 rounded-lg border border-dark/10 hover:border-dark/30 transition-all group">
+              <details className="bg-white p-7 rounded-2xl border border-dark/10 hover:border-dark/30 transition-all group cursor-pointer">
                 <summary className="font-bold text-lg cursor-pointer text-dark list-none flex justify-between items-center">
                   Is my data truly private?
                   <span className="text-dark/40 group-open:rotate-180 transition-transform">▼</span>
@@ -435,7 +435,7 @@ Have questions? We've got answers.             </h2>
                 </p>
               </details>
 
-              <details className="bg-white p-7 rounded-lg border border-dark/10 hover:border-dark/30 transition-all group">
+              <details className="bg-white p-7 rounded-2xl border border-dark/10 hover:border-dark/30 transition-all group cursor-pointer">
                 <summary className="font-bold text-lg cursor-pointer text-dark list-none flex justify-between items-center">
                   How fast can I get started?
                   <span className="text-dark/40 group-open:rotate-180 transition-transform">▼</span>
@@ -458,7 +458,7 @@ Have questions? We've got answers.             </h2>
               Stop compromising between privacy and proof. Get both with zero-knowledge verification.
             </p>
             <Button size="lg" className="bg-highlight text-dark hover:bg-highlight/90 font-bold px-12 py-7 text-lg" asChild>
-              <Link href="/dashboard">Start Proving Now</Link>
+              <Link href="/dashboard">Get Proofed Now</Link>
             </Button>
           </div>
         </section>

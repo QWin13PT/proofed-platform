@@ -205,7 +205,7 @@ export function Header({ theme = 'light' }) {
             </>
           ) : (
             <>
-              <Button asChild size="sm" variant={theme === 'dark' ? 'light' : 'default'}>
+              <Button asChild size="sm" variant={theme === 'light' ? 'default' : 'light'}>
                 <Link href="/dashboard">Get Started</Link>
               </Button>
             </>
